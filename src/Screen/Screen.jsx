@@ -2,9 +2,9 @@ import React from "react";
 import "./Screen.css";
 
 
-function Screen(){
+function Screen({ OnScreenChange, operation }){
     return (
-        <input className="screen" type="text" />
+        <input value={ operation } onChange={ OnScreenChange } className="screen" type="text" />
     );
 }
 
