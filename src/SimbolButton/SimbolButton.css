@@ -1,0 +1,21 @@
+.simbol-button{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(90, 248, 196);
+    box-shadow: 0 0 5px rgb(96, 209, 171);
+    font-size: large;
+    font-weight: 100;
+    color: white;
+}
+
+.simbol-button:hover{
+    background-color: rgb(126, 250, 209);
+}
+
+.simbol-button:active{
+    background-color: rgb(77, 228, 177);
+    box-shadow: 0 0 0px rgb(96, 209, 171);
+}

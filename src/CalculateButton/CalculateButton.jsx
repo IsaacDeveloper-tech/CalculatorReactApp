@@ -1,4 +1,5 @@
 import React from "react";
+import "./CalculateButton.css";
 
 
 function CalculateButton(){

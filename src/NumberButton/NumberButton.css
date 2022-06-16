@@ -1,0 +1,21 @@
+.number-button{
+    width: 80px;
+    height: 80px;
+    background-color: aquamarine;
+    box-shadow: 0 0 5px rgb(96, 209, 171);
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-weight: 100;
+    color: white;
+    margin-top: 10px;
+}
+
+.number-button:hover{
+    background-color: rgb(158, 255, 223);
+}
+
+.number-button:active{
+    background-color: rgb(98, 224, 182);
+    box-shadow: 0 0 0px rgb(96, 209, 171);
+}

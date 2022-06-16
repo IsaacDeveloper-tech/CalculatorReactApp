@@ -29,7 +29,7 @@ function App() {
 
       <div className='buttons-box'>
 
-        <div>
+        <div className='number-simbol-box'>
           <div className='buttons-number'>
             { SetNumberButtons(10) }
           </div>
@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
 
-        <div>
+        <div className='buttons-actions'>
           <CalculateButton />
           <DeleteButton />
         </div>
