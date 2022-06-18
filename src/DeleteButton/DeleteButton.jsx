@@ -1,9 +1,9 @@
 import React from "react";
 import "./DeleteButton.css";
 
-function DeleteButton() {
+function DeleteButton({ SetStateOperation }) {
     return (
-        <button className="delete-button">CE</button>
+        <button onClick={ () => SetStateOperation("") } className="delete-button">CE</button>
     );
 }
 

@@ -69,7 +69,12 @@ function App() {
 
     for(let i = maxButtons - 1; i >= 0; i--){
       buttons.push(
-        <NumberButton key={i} number={i} />
+        <NumberButton 
+          key={i} 
+          number={i} 
+          SetStateOperation = { SetStateOperation }
+          operation = { operation }
+        />
       );
     }
 
@@ -91,16 +96,16 @@ function App() {
             { SetNumberButtons(10) }
           </div>
           <div className='buttons-simbol'>
-            <SimbolButton simbol={ "+" } />
-            <SimbolButton simbol={ "-" } />
-            <SimbolButton simbol={ "x" } />
-            <SimbolButton simbol={ "/" } />
+            <SimbolButton simbol={ "+" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
+            <SimbolButton simbol={ "-" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
+            <SimbolButton simbol={ "x" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
+            <SimbolButton simbol={ "/" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
           </div>
         </div>
 
         <div className='buttons-actions'>
           <CalculateButton />
-          <DeleteButton />
+          <DeleteButton SetStateOperation = { SetStateOperation } />
         </div>
       </div>
 
