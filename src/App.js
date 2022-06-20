@@ -23,7 +23,7 @@ function App() {
   const LastInputIsASimbol = input => {
     let lastInput = input[input.length - 1];
 
-    return lastInput === "+" || lastInput === "-" || lastInput === "/" || lastInput === "x";
+    return lastInput === "+" || lastInput === "-" || lastInput === "/" || lastInput === "*";
   }
 
   const InputHasASimbol = input => {
@@ -98,13 +98,18 @@ function App() {
           <div className='buttons-simbol'>
             <SimbolButton simbol={ "+" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
             <SimbolButton simbol={ "-" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
-            <SimbolButton simbol={ "x" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
+            <SimbolButton simbol={ "*" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
             <SimbolButton simbol={ "/" } IsCorrectInput = { IsCorrectInput } SetStateOperation = { SetStateOperation } operation = { operation }/>
           </div>
         </div>
 
         <div className='buttons-actions'>
-          <CalculateButton />
+          <CalculateButton 
+            operation={ operation }
+            SetStateOperation = { SetStateOperation }
+            LastInputIsANumber = { LastInputIsANumber }
+            InputHasASimbol = { InputHasASimbol } 
+          />
           <DeleteButton SetStateOperation = { SetStateOperation } />
         </div>
       </div>
