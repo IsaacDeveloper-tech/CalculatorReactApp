@@ -67,7 +67,12 @@ function useCalculateOperation(LastInputIsANumber, InputHasASimbol) {
                 result = firstNumber * secondNumber;
                 break;
             case "/":
-                result = firstNumber / secondNumber;
+                if(secondNumber === 0){
+                    alert("Multiply by 0"); //easter egg Bart Simpson
+                } else {
+                    result = firstNumber / secondNumber;
+                }
+                
                 break;
                 default:
                     console.error("invalid operator");
