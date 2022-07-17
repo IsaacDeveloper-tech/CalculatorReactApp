@@ -1,12 +1,12 @@
 .screen{
     width: 400px;
     height: 7vh;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(96, 209, 171) inset;
+    border-radius: 100px;
+    box-shadow: 0 0 10px gray;
     border: none;
-    background-color: rgb(206, 255, 239);
+    background-color: white;
     padding-left: 20px;
     font-size: 50px;
     font-weight: 100;
-    color: white;
+    color: rgb(77, 145, 185);
 }

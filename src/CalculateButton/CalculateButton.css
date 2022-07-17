@@ -2,20 +2,23 @@
     width: 280px;
     height: 80px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
     border: none;
     font-size: large;
     font-weight: 100;
     color: white;
-    background-color: rgb(109, 209, 176);
-    box-shadow: 0 0 5px rgb(96, 209, 171);
+    background-color: rgb(109, 172, 209);
+    box-shadow: 0 0 10px gray;
+    transition: .1s;
 }
 
 .calculate-button:hover{
-    background-color: rgb(142, 228, 199);
+    background-color: rgb(142, 188, 241);
+    transform: scale(1.1);
 }
 
 .calculate-button:active{
-    background-color: rgb(89, 175, 147);
+    background-color: rgb(89, 105, 175);
     box-shadow: 0 0 0px rgb(96, 209, 171);
+    transform: scale(.8);
 }

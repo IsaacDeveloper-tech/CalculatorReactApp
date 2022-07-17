@@ -1,21 +1,24 @@
 .number-button{
     width: 80px;
     height: 80px;
-    background-color: aquamarine;
-    box-shadow: 0 0 5px rgb(96, 209, 171);
-    border-radius: 10px;
+    background-color: rgb(127, 204, 255);
+    box-shadow: 0 0 10px gray;
+    border-radius: 100%;
     border: none;
     font-size: large;
     font-weight: 100;
     color: white;
     margin-top: 10px;
+    transition: .1s;
 }
 
 .number-button:hover{
-    background-color: rgb(158, 255, 223);
+    background-color: rgb(162, 216, 238);
+    transform: scale(1.1);
 }
 
 .number-button:active{
-    background-color: rgb(98, 224, 182);
+    background-color: rgb(98, 178, 224);
     box-shadow: 0 0 0px rgb(96, 209, 171);
+    transform: scale(.8);
 }

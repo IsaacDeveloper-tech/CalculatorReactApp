@@ -2,20 +2,23 @@
     width: 80px;
     height: 80px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
     border: none;
     font-size: large;
     font-weight: 100;
     color: white;
-    background-color: rgb(80, 156, 131);
-    box-shadow: 0 0 5px rgb(96, 209, 171);
+    background-color: rgb(80, 107, 156);
+    box-shadow: 0 0 10px gray;
+    transition: .1s;
 }
 
 .delete-button:hover{
-    background-color: rgb(108, 182, 157);
+    background-color: rgb(111, 157, 199);
+    transform: scale(1.1);
 }
 
 .delete-button:active{
-    background-color: rgb(62, 122, 102);
+    background-color: rgb(54, 96, 121);
     box-shadow: 0 0 0px rgb(96, 209, 171);
+    transform: scale(.8);
 }
